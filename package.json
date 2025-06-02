@@ -1,0 +1,15 @@
+{
+  "name": "learner-circle",
+  "version": "1.0.0",
+  "description": "Educational platform with automated batch management",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "render-build": "npm install && npm run install-all && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
